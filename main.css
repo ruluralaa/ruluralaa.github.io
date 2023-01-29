@@ -1,0 +1,146 @@
+/*common*/
+body{
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  font-family: 'Montserrat', sans-serif;
+  background-color:azure;
+}
+
+img{
+  display: block;
+}
+a{
+  text-decoration:none;
+}
+
+li{
+  list-style-type: none;
+}
+/* header */
+.top{
+  width: 1100px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+
+}
+.top .logo{
+  height: 75px;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  margin: auto;
+  color: navy;
+  font-size: 50px;
+}
+/* 
+.top .allmenu ul.menu .material-symbols-outlined {
+  color: blue;
+  font-size: 27px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 48
+
+} */
+
+.top .allmenu {
+  position: absolute;
+  top: 10px;
+  right:0;
+  display: flex;
+}
+
+.top .allmenu ul.menu{
+  display: flex;
+}
+
+.top .allmenu ul.menu li{
+  position: relative;
+}
+
+.top .allmenu ul.menu li::before{
+  content: "";
+  width: 1px;
+  height: 20px;
+  background-color: gray;
+  position: absolute;
+  top:0;
+  bottom:0;
+  margin: auto;
+}
+.top .allmenu ul.menu li:first-child::before{
+  display: none;
+}
+
+.top .allmenu ul.menu li a{
+  font-size: 20px;
+  padding: 11px 16px;
+  display: block;
+  color: navy;
+}
+.top .allmenu ul.menu li a:hover{
+  color: gray;
+}
+
+.top .allmenu .search{
+  height: 34px;
+  position: relative;
+  margin-top: 24px;
+}
+
+.top .allmenu .search input{
+  width: 34px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  background-color: white;
+  color:#333;
+  transition: width .4s;
+  font-size: 15px;
+  top:100px;
+
+}
+
+.top .allmenu .search input:focus{
+  width: 190px;
+}
+
+.top .allmenu .search .material-symbols-outlined{
+  position: absolute;
+  height: 24px;
+  top:0;
+  bottom:0;
+  margin: auto;
+  color: navy;
+  font-size: 27px;
+}
+
+.cloudy{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#frame2_1 div, #frame2_2 div, #frame2_3 div{
+  border: 2px solid navy;
+}
+#frame2_1, #frame2_2, #frame2_3 {
+  display:grid;
+  grid-template-columns: 500px 500px;
+  height: 600px;
+}
+
+#frame1{
+  display:grid;
+  grid-template-rows: 600px 600px;
+  place-content: center;
+  
+}
